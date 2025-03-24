@@ -6,23 +6,27 @@
       "group": "Getting Started",
       "pages": [
         {
-          "title": "Environment Setup",
+          "title": "Get Started",
           "href": "/"
+        },
+        {
+          "title": "Environment Setup",
+          "href": "/get-started/environment-setup"
         },
         {
           "group": "Quickstart",
           "pages": [
             {
               "title": "Overview",
-              "href": "/quickstart"
+              "href": "/get-started/quickstart"
             },
             {
               "title": "Dart Shelf",
-              "href": "/quickstart/dart-shelf"
+              "href": "/get-started/quickstart/dart-shelf"
             },
             {
               "title": "Flutter Web",
-              "href": "/quickstart/flutter-web"
+              "href": "/get-started/quickstart/flutter-web"
             }
           ]
         }
