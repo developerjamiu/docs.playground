@@ -1,21 +1,32 @@
 {
-  "name": "My Docs",
-  "description": "My documentation site",
+  "name": "Docs Testing",
+  "description": "Globe Docs V2 Testing",
   "sidebar": [
-  {
-    "group": "Getting Started",
-    "pages": [
-      {
-        "title": "Getting to know docs.page",
-        "href": "/",
-        "icon": "rocket"
-      },
-      {
-        "title": "Next Steps",
-        "href": "/next-steps",
-        "icon": "arrow-right"
-      }
-    ]
-  }
-]
+    {
+      "group": "Getting Started",
+      "pages": [
+        {
+          "title": "Environment Setup",
+          "href": "/"
+        },
+        {
+          "group": "Quickstart",
+          "pages": [
+            {
+              "title": "Overview",
+              "href": "/quickstart"
+            },
+            {
+              "title": "Dart Shelf",
+              "href": "/quickstart/dart-shelf"
+            },
+            {
+              "title": "Flutter Web",
+              "href": "/quickstart/flutter-web"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

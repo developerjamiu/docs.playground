@@ -1,56 +1,29 @@
 ---
-title: Welcome to docs.page!
-description: Get started with docs.page
+title: Setting Up Your Development Environment
 ---
 
-Welcome to docs.page! The init command you just ran has created a basic file struture in your project to help you get started.
+Before you can start building with Globe.dev, you'll need to set up your development environment. This involves installing the Dart SDK and the Globe CLI.
 
-## Walkthrough
+## 1. Install the Dart SDK:
 
-### Configuration
+If you don't already have the Dart SDK installed, follow the [official instructions](https://dart.dev/get-dart) for your operating system.
 
-In the root of your directory a new `docs.json` file has been created. This file is used to configure your documentation site. You can customize the name, description, and sidebar, theme, logos and more using this file.
+## 2. Install the Globe CLI:
 
-Here's a basic example of what the file looks like:
+The Globe CLI (Command Line Interface) is a tool that allows you to interact with Globe.dev from your terminal. To install it, open your terminal and run:
 
-```
-{
-  "name": "My Docs",
-  "description": "My documentation site",
-  "sidebar": [
-  {
-    "group": "Getting Started",
-    "pages": [
-      {
-        "title": "Getting to know docs.page",
-        "href": "/",
-        "icon": "rocket"
-      },
-      {
-        "title": "Next Steps",
-        "href": "/next-steps",
-        "icon": "arrow-right"
-      }
-    ]
-  }
-]
-}
+```bash
+dart pub global activate globe_cli
 ```
 
-To learn more about the advanced configuration options, check out the [docs](https://use.docs.page/configuration).
+This command downloads and installs the CLI, making the globe command available globally on your system.
 
-### Content
+## 3. Verify Installation:
 
-docs.page uses the `docs` directory to store your documentation pages. Two pages have been created for you:
+To ensure everything is installed correctly, run:
 
-- `index.mdx` - The home page of your documentation site, resolves to the root URL.
-- `next-steps.mdx` - A page to help you get started with docs.page, resolves to `/next-steps`.
+```bash
+globe --version
+```
 
-Documentation can be written using the standard [GitHub Flavored Markdown Spec](https://github.github.com/gfm/) and also supports the use of [MDX](https://mdxjs.com/), 
-with the ability to render custom [components](https://use.docs.page/components) for more advanced use cases.
-
-## Preview
-
-To preview your documentation site, head over to [https://docs.page/preview](https://docs.page/preview) in your browser and open this directory.
-
-Previewing your documentation site will allow you to see the changes you make in real-time before you publish to the world.
+This should print the version number of the Globe CLI, confirming a successful installation.
