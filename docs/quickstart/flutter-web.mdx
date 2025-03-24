@@ -1,4 +1,31 @@
 ---
-title: Flutter Web
-description: Get started with Flutter Web
+title: Deploying a Flutter Web Application
+description: This guide will walk you through deploying a basic Flutter web application to Globe.dev.
 ---
+
+## 1. Create a new Flutter project:
+
+```bash
+flutter create my_globe_flutter_app
+cd my_globe_flutter_app
+```
+
+## 2. Build for the web:
+
+```bash
+flutter build web
+```
+
+This creates a build/web directory containing the compiled web application.
+
+## 3. Deploy to Globe.dev:
+
+```bash
+globe deploy
+```
+
+The CLI will automatically detect that this is a Flutter Web project and use the appropriate settings. You'll be prompted to confirm and provide a project name.
+
+## 4. Visit the URL:
+
+Open the provided URL in your browser. You should see the default Flutter counter application.
